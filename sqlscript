@@ -1,0 +1,15 @@
+USE 5450net;
+create table Users (
+    username varchar(20) not null, 
+    password varchar(20) not null,
+    constraint primary key (username)
+);
+
+
+create table forum (
+    username varchar(20) not null,
+    message varchar(500) not null,
+    id int not null AUTO_INCREMENT,
+    primary key (id)
+);
+insert into Users (username, password) values (graysonfenwick, hispassword);
